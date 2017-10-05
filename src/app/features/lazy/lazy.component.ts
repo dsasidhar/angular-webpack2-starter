@@ -6,6 +6,8 @@ import { Observable } from 'rxjs/Observable';
 import { LazyActions } from './lazy.actions';
 import { StoreWithLazy, lazyStoreFactory } from './lazy.reducer';
 
+import { AppComponent } from 'app/app.component';
+
 @Component({
   selector: 'my-lazy',
   templateUrl: './lazy.component.html',

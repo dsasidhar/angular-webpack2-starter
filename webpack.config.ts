@@ -13,6 +13,9 @@ import {
   MY_CLIENT_RULES, SHOW_WEBPACK_BUNDLE_ANALYZER
 } from './constants';
 
+const path = require('path');
+
+
 const {
   DefinePlugin,
   DllPlugin,
@@ -342,7 +345,8 @@ const serverConfig: WebpackConfig = {
 
 const defaultConfig = {
   resolve: {
-    extensions: ['.ts', '.js', '.json']
+    extensions: ['.ts', '.js', '.json'],
+    modules: [path.resolve('./src'), 'node_modules']
   }
 };
 
